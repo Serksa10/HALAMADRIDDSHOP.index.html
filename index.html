@@ -286,7 +286,7 @@
     function addTicketToCart(eventTitle, sector, seat, price){
       const key = `TICKET::${sector}::${seat}`;
       const existing = cart.find(c=>c.key===key);
-      if(existing) existing.qty += 1; else cart.push({ key, id:9999, title: eventTitle + ' — sektor ' + sector + ' / miejsce ' + seat, price: price, size: '', qty:1, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Santiago_Bernabeu_-_2018.jpg/320px-Santiago_Bernabeu_-_2018.jpg' });
+      if(existing) existing.qty += 1; else cart.push({ key, id:9999, title: eventTitle + ' — sektor ' + sector + ' / miejsce ' + seat, price: price, size: '', qty:1, img: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg' });
       updateCartUI();
     }
 
@@ -580,7 +580,7 @@
 
     function openTicketsModal(){
       const eventTitle = 'Real Madrid vs Olympiacos';
-      const price = 599;
+      const price = 799;
       modalRoot.style.display = 'block';
       modalRoot.innerHTML = `
         <div class="modal" role="dialog" aria-modal="true">
